@@ -204,16 +204,16 @@ main {
 
 .currency-table--container .down {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 14px;
   margin-left: 10px;
   background-image: url('./assets/icons/trending-down.png');
 }
 
 .currency-table--container .up {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 14px;
   margin-left: 10px;
   background-image: url('./assets/icons/trending-up.png');
 }
@@ -232,4 +232,101 @@ main {
   font-weight: 500;
   line-height: 1.5rem;
   color: var(--warn-black);
+}
+
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warn-black);
+}
+
+.main-product-detail .icon-potato {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top: -10px;
+  left: calc(50% - 20px);
+  background-image: url('./assets/icons/potato.svg');
+}
+
+.product-detail--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.product-detail--title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.product-detail--title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product-detail--card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  text-align: left;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clock {
+  background-image: url('./assets/icons/clock.svg');
+}
+
+.eye {
+  background-image: url('./assets/icons/eye.svg');
+}
+
+.dollar {
+  background-image: url('./assets/icons/dollar-sign.svg');
+}
+
+.check {
+  background-image: url('./assets/icons/check-circle.svg');
+}
+
+.product-card--title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product-card--body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
 }

@@ -141,12 +141,23 @@ main {
   color: #757575;
 }
 
+.main-tables-container {
+  display: flex;
+  height: 370px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
 .main-currency-table {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   height: 360px;
-  margin: 0 auto;
+  scroll-snap-align: center;
   font-family: 'Inter', sans-serif;
 }
 
@@ -156,6 +167,8 @@ main {
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--bitcoin-orange);
+  text-align: left;
+  margin-left: 20px;
 }
 
 .currency-table--container {
@@ -233,6 +246,22 @@ main {
   font-weight: 500;
   line-height: 1.5rem;
   color: var(--warn-black);
+}
+
+.main-currency-table .blue {
+  color: var(--secondary-blue);
+}
+
+.soft-blue {
+  background-color: var(--soft-blue);
+}
+
+.tables-arrow {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  margin: 15px;
+  background-image: url('./assets/icons/arrow-right.png');
 }
 
 .main-product-detail {
@@ -395,11 +424,11 @@ main {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
-  min-width: 230px;
+  min-width: 190px;
   max-width: 300px;
   height: 250px;
   padding: 0px 15px;
-  margin: 50px 25px auto;
+  margin: 50px 5px auto;
   background-color: var(--just-white);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
@@ -468,4 +497,34 @@ main {
   height: 20px;
   background-image: url('./assets/icons/arrow-right-orange.svg');
   vertical-align: text-bottom;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--bitcoin-orange);
+}
+
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.left li {
+  margin: 10px 0;
+}
+
+.left a {
+  text-decoration: none;
+  color: var(--just-white);
 }

@@ -1,0 +1,11 @@
+{
+  "name": "curso-ecmas6",
+  "version": "1.0.0",
+  "description": "entendiendo cmascript6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bbeatrizsi",
+  "license": "ISC"
+}

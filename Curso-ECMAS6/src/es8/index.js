@@ -1,6 +1,6 @@
 'use strict';
 
-//ES7 Nace en Junio de 2017
+//ES8 Nace en Junio de 2017
 
 // Object.entries Object.values
 
@@ -30,3 +30,30 @@ console.log(string.padEnd(12, ' abc'));
 console.log('food'.padEnd(12, ' abc'));
 
 
+// Async y await
+
+const helloWorld = () => {
+    return new Promise((resolve,reject) => {
+        (true)
+        ? setTimeout(() => resolve('Hello world'),3000)
+        : reject(new Error('Test Error'))
+    })
+};
+
+const helloAsync = async() => {
+    const hello = await helloWorld();
+    console.log(hello);
+}
+
+helloAsync();
+
+const anotherFunction = async() => {
+    try {
+        const hello = await helloWorld();
+        console.log(hello);
+    } catch {
+        console.log(error);
+    }
+};
+
+anotherFunction();

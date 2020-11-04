@@ -1,4 +1,3 @@
-import { TestScheduler } from 'jest';
 import {sumar, multiplicar, restar, dividir} from '../maths';
 
 describe('Calculos matemáticos', () => {

@@ -4,7 +4,9 @@
   "description": "Curso de PLatzi para aprender Jest",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "jest",
